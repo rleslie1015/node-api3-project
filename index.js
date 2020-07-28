@@ -1,7 +1,11 @@
 // code away!
-const server = require('./server')
-const port = 7000
+const express = require('express')
+const app = require('./server')
+// const cors = require('cors')
+const port = 8000
 
-server.listen(port, () => {
+// app.use(cors)
+
+app.listen(port, () => {
     console.log(`Server running on port ${port}`)
 })
